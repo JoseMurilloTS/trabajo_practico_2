@@ -1,6 +1,10 @@
 class Shooter extends GameObject {
+  int vidas;
+  
   Shooter(float x, float y, PImage img) {
     super(x, y, img);
+    
+    vidas = 3; //iniciar con 3 vidas
   }
   
   public void display() {
@@ -8,5 +12,9 @@ class Shooter extends GameObject {
   }
   
   public void mover() {
+  }
+  
+  int getVidas() {
+    return this.vidas;
   }
 }

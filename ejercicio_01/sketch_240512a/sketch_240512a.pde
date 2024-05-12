@@ -11,11 +11,16 @@ public void setup() {
 }
 
 public void draw() {
-  background(0);
+  background(#000000);
   
   shooter.mover();
   shooter.display();
   
   asteroide.mover();
   asteroide.display();
+  
+  //implementación del hud indicando las vidas
+  fill(#FFFFFF);
+  textAlign(RIGHT);
+  text("Vidas: " + shooter.getVidas(), width-20, 20);
 }
