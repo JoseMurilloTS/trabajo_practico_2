@@ -1,6 +1,6 @@
 class Dado extends GameObject {
-  int numero;
-  float tamaño = 50;
+  private int numero;
+  private float tamaño = 50;
   
   Dado(int numero, int x, int y) {
     super(x, y);
@@ -14,7 +14,7 @@ class Dado extends GameObject {
   }
   
   public void mostrar() {
-    fill(200);
+    fill(#685FF7);
     rectMode(CENTER);
     rect(x, y, tamaño, tamaño);
     fill(0);
