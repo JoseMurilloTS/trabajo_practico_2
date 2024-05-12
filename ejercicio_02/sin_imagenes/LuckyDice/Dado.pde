@@ -7,7 +7,7 @@ class Dado extends GameObject {
     this.numero = numero;
   }
   
-  // constructor que genera un número aleatorio
+  //constructor que genera un número aleatorio
   Dado(int x, int y) {
     super(x, y);
     this.numero = (int) random(1, 7);
