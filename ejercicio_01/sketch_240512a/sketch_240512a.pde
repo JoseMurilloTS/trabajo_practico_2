@@ -8,7 +8,7 @@ public void setup() {
   
   //inicialización de las clases
   joypad = new Joypad();
-  shooter = new Shooter(width/2, height-64, loadImage("shooter.png"));
+  shooter = new Shooter(width/2, height-64, loadImage("shooter.png"), joypad);
   asteroide = new Asteroide(random(width), random(height/2), loadImage("asteroide.png"));
 }
 

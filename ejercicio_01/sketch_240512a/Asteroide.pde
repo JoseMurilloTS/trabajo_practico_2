@@ -8,5 +8,9 @@ class Asteroide extends GameObject {
   }
   
   public void mover() {
+    float velocidad = 3;
+    
+    this.posicion.x += random(-velocidad, velocidad);
+    this.posicion.y += random(-velocidad, velocidad);
   }
 }
