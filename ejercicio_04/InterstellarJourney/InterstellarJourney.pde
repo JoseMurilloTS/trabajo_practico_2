@@ -1,6 +1,7 @@
 private Nave nave;
 private Asteroide asteroide;
 private Enemigo enemigo;
+private Bala bala;
 
 
 public void setup() {
@@ -24,7 +25,16 @@ public void draw() {
   
   enemigo.display();
   enemigo.mover();
-  
+
+  if (bala != null) {
+    bala.display();
+    bala.mover();
+    
+    if (bala.y < 0 || bala.y > height) {
+      bala = null;
+    }
+  }
+
 }
 
 public void keyPressed() {

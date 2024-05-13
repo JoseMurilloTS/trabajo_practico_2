@@ -4,6 +4,7 @@ class Bala implements IDisplayable, IMoveable {
 
   Bala(PImage img, float posicionX, float posicionY) {
     this.img = img;
+    this.img.resize(24,24);
     this.x = posicionX;
     this.y = posicionY;
   }
