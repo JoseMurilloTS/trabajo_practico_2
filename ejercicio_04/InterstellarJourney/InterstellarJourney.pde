@@ -2,6 +2,7 @@ private Nave nave;
 private Asteroide asteroide;
 private Enemigo enemigo;
 
+
 public void setup() {
   size(800, 800);
   imageMode(CENTER);
