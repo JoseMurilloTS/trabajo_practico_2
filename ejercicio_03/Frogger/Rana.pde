@@ -1,15 +1,15 @@
 class Rana {
   private float x, y;
-  private float tamaño;
+  private PImage imagen;
   
-  Rana(float x, float y, float tamaño) {
+  Rana(float x, float y, PImage imagen) {
     this.x = x;
     this.y = y;
-    this.tamaño = tamaño;
+    this.imagen = imagen;
+    this.imagen.resize(64, 64);
   }
   
   public void display() {
-    fill(#0CC930);
-    ellipse(x, y, tamaño, tamaño);
+    image(imagen, x, y);
   }
 }

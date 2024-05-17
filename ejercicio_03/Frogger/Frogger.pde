@@ -7,12 +7,12 @@ private SpawnerVehiculos spawnerVehiculos;
 
 void setup() {
   size(700, 700);
-  
+    
   tablero = new Tablero();
-  jugador = new Jugador(width/2, height, 20);
-  rana = new Rana(width/2, 120, 20);
-  tortuga = new Tortuga(width, height/4, 20);
-  tronco = new Tronco(0, height/3, 60, 20);
+  jugador = new Jugador(width/2-32, height, loadImage("jugador.png"));
+  rana = new Rana(width/2-34, 86, loadImage("rana.png"));
+  tortuga = new Tortuga(width, height/4, loadImage("tortuga.png"));
+  tronco = new Tronco(0, height/3, loadImage("tronco.png"));
 
   //crear el spawner de vehículos
   PVector posicionSpawner = new PVector(0, 0);

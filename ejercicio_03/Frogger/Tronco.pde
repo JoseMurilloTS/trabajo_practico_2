@@ -1,12 +1,12 @@
 class Tronco {
   private float x, y;
-  private float ancho, largo;
+  private PImage imagen;
   
-  Tronco(float x, float y, float ancho, float largo) {
+  Tronco(float x, float y, PImage imagen) {
     this.x = x;
     this.y = y;
-    this.ancho = ancho;
-    this.largo = largo;
+    this.imagen = imagen;
+    this.imagen.resize(128, 128);
   }
   
   public void mover(float direccionX) {
@@ -14,7 +14,6 @@ class Tronco {
   }
   
   public void display() {
-    fill(#833A3A);
-    rect(x, y, ancho, largo);
+    image(imagen, x, y);
   }
 }

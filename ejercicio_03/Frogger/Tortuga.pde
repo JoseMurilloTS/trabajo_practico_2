@@ -1,11 +1,12 @@
 class Tortuga {
   private float x, y;
-  private float tamaño;
+  private PImage imagen;
   
-  Tortuga(float x, float y, float tamaño) {
+  Tortuga(float x, float y,  PImage imagen) {
     this.x = x;
     this.y = y;
-    this.tamaño = tamaño;
+    this.imagen = imagen;
+    this.imagen.resize(64, 64);
   }
   
   public void mover(float direccionX) {
@@ -13,7 +14,6 @@ class Tortuga {
   }
   
   public void display() {
-    fill(#266C33);
-    ellipse(x, y, tamaño, tamaño);
+    image(imagen, x, y);
   }
 }

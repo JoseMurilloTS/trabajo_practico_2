@@ -1,11 +1,12 @@
 class Jugador {
   private float x, y;
-  private float tamaño;
+  private PImage imagen;
   
-  Jugador(float x, float y, float tamaño) {
+  Jugador(float x, float y, PImage imagen) {
     this.x = x;
     this.y = y;
-    this.tamaño = tamaño;
+    this.imagen = imagen;
+    this.imagen.resize(64, 64);
   }
   
   public void mover(float direccionX, float direccionY) {
@@ -14,7 +15,6 @@ class Jugador {
   }
   
   public void display() {
-    fill(#FF08FC);
-    ellipse(x, y, tamaño, tamaño);
+    image(imagen, x, y);
   }
 }
